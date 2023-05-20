@@ -23,6 +23,7 @@
 		24D6F05F2A189F6E008BAF80 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D6F05E2A189F6E008BAF80 /* TabBarController.swift */; };
 		24D6F0612A18A1FE008BAF80 /* MVVMViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24D6F0602A18A1FE008BAF80 /* MVVMViewController.xib */; };
 		24D6F0632A18A209008BAF80 /* MVPViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24D6F0622A18A209008BAF80 /* MVPViewController.xib */; };
+		24D6F0672A18AAAF008BAF80 /* RandomNumberGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D6F0662A18AAAF008BAF80 /* RandomNumberGenerator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		24D6F05E2A189F6E008BAF80 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		24D6F0602A18A1FE008BAF80 /* MVVMViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MVVMViewController.xib; sourceTree = "<group>"; };
 		24D6F0622A18A209008BAF80 /* MVPViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MVPViewController.xib; sourceTree = "<group>"; };
+		24D6F0662A18AAAF008BAF80 /* RandomNumberGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomNumberGenerator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 				24D6F0232A189C84008BAF80 /* AppDelegate.swift */,
 				24D6F0252A189C84008BAF80 /* SceneDelegate.swift */,
 				24D6F05E2A189F6E008BAF80 /* TabBarController.swift */,
+				24D6F0662A18AAAF008BAF80 /* RandomNumberGenerator.swift */,
 				24D6F0592A189CF1008BAF80 /* MVVM */,
 				24D6F0532A189C9C008BAF80 /* MVP */,
 				24D6F0272A189C84008BAF80 /* ViewController.swift */,
@@ -305,6 +308,7 @@
 				24D6F0562A189CD9008BAF80 /* Presenter.swift in Sources */,
 				24D6F05B2A189D01008BAF80 /* ViewModel.swift in Sources */,
 				24D6F0262A189C84008BAF80 /* SceneDelegate.swift in Sources */,
+				24D6F0672A18AAAF008BAF80 /* RandomNumberGenerator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
