@@ -10,25 +10,29 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MVPViewController" customModule="Combine_StoryboardSample" customModuleProvider="target">
             <connections>
+                <outlet property="resultLabel" destination="8gr-iX-bf3" id="7K0-bz-WxQ"/>
                 <outlet property="view" destination="iN0-l3-epB" id="4vX-Fx-InV"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nuu-2R-qSj">
-                    <rect key="frame" x="139.66666666666666" y="368" width="96" height="34"/>
+                    <rect key="frame" x="148.66666666666666" y="460.33333333333331" width="96" height="34.333333333333314"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="34.329999999999998" id="Pu9-cb-0us"/>
                         <constraint firstAttribute="width" constant="96" id="uG1-4V-swH"/>
                     </constraints>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="plain" title="押してね"/>
+                    <connections>
+                        <action selector="tappedButton:" destination="-1" eventType="touchUpInside" id="Nsr-oH-zNA"/>
+                    </connections>
                 </button>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="Hok-QE-Zeq">
-                    <rect key="frame" x="57.666666666666657" y="307.33333333333331" width="260" height="52.666666666666686"/>
+                    <rect key="frame" x="66.666666666666686" y="399.66666666666669" width="259.99999999999994" height="52.666666666666686"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="タップでランダムな数字を返すよ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kzb-FL-mNO">
                             <rect key="frame" x="0.0" y="0.0" width="260" height="20.333333333333332"/>
@@ -37,7 +41,7 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="↓" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ApA-CO-zPb">
-                            <rect key="frame" x="0.0" y="32.333333333333371" width="260" height="20.333333333333329"/>
+                            <rect key="frame" x="0.0" y="32.333333333333314" width="260" height="20.333333333333329"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
@@ -45,13 +49,13 @@
                     </subviews>
                 </stackView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="数字" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8gr-iX-bf3">
-                    <rect key="frame" x="164.33333333333334" y="438" width="46.666666666666657" height="27.666666666666686"/>
+                    <rect key="frame" x="173.33333333333334" y="530.66666666666663" width="46.666666666666657" height="27.666666666666629"/>
                     <fontDescription key="fontDescription" type="system" pointSize="23"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MVPで作ってるよ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kXg-2P-jvX">
-                    <rect key="frame" x="73.333333333333329" y="115.00000000000001" width="228.66666666666669" height="33.666666666666671"/>
+                    <rect key="frame" x="82.333333333333329" y="115.00000000000001" width="228.66666666666669" height="33.666666666666671"/>
                     <fontDescription key="fontDescription" type="system" pointSize="28"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
