@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MVVMViewController" customModule="Combine_StoryboardSample" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="iN0-l3-epB" id="Wxt-3b-2zq"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MVVMで作ってるよ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kxt-35-j85">
+                    <rect key="frame" x="69.666666666666671" y="115.00000000000001" width="253.66666666666663" height="33.666666666666671"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="SQx-sV-gnf">
+                    <rect key="frame" x="66.666666666666686" y="399.66666666666669" width="260" height="52.666666666666686"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="タップでランダムな数字を返すよ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oy1-No-UdC">
+                            <rect key="frame" x="0.0" y="0.0" width="260" height="20.333333333333332"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="↓" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kRy-Os-XbY">
+                            <rect key="frame" x="0.0" y="32.333333333333314" width="260" height="20.333333333333329"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="数字" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ok-Uv-aeH">
+                    <rect key="frame" x="173.33333333333334" y="530.33333333333337" width="46.666666666666657" height="27.666666666666629"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pYF-iJ-89B">
+                    <rect key="frame" x="148.66666666666666" y="460.33333333333331" width="96" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="96" id="9Nu-OT-par"/>
+                        <constraint firstAttribute="height" constant="34" id="rER-6R-c1L"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="押してね"/>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="pYF-iJ-89B" firstAttribute="top" secondItem="SQx-sV-gnf" secondAttribute="bottom" constant="8" id="8Bh-eh-hlP"/>
+                <constraint firstItem="SQx-sV-gnf" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="9ef-w1-ozj"/>
+                <constraint firstItem="SQx-sV-gnf" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="TsX-FL-Ibh"/>
+                <constraint firstItem="pYF-iJ-89B" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="cSz-iZ-9LH"/>
+                <constraint firstItem="4Ok-Uv-aeH" firstAttribute="top" secondItem="pYF-iJ-89B" secondAttribute="bottom" constant="36" id="g8K-CB-fjP"/>
+                <constraint firstItem="Kxt-35-j85" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="56" id="k0l-Ku-M4g"/>
+                <constraint firstItem="4Ok-Uv-aeH" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="s5O-qn-Try"/>
+                <constraint firstItem="Kxt-35-j85" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="wEZ-zj-VBY"/>
+            </constraints>
+            <point key="canvasLocation" x="64.885496183206101" y="20.422535211267608"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

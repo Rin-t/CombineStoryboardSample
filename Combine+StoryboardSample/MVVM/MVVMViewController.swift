@@ -7,3 +7,7 @@
 
 import UIKit
 
+final class MVVMViewController: UIViewController {
+
+}
+
