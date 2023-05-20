@@ -20,6 +20,9 @@
 		24D6F0582A189CE9008BAF80 /* MVPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D6F0572A189CE9008BAF80 /* MVPViewController.swift */; };
 		24D6F05B2A189D01008BAF80 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D6F05A2A189D01008BAF80 /* ViewModel.swift */; };
 		24D6F05D2A189D0F008BAF80 /* MVVMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D6F05C2A189D0F008BAF80 /* MVVMViewController.swift */; };
+		24D6F05F2A189F6E008BAF80 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D6F05E2A189F6E008BAF80 /* TabBarController.swift */; };
+		24D6F0612A18A1FE008BAF80 /* MVVMViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24D6F0602A18A1FE008BAF80 /* MVVMViewController.xib */; };
+		24D6F0632A18A209008BAF80 /* MVPViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24D6F0622A18A209008BAF80 /* MVPViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +60,9 @@
 		24D6F0572A189CE9008BAF80 /* MVPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPViewController.swift; sourceTree = "<group>"; };
 		24D6F05A2A189D01008BAF80 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		24D6F05C2A189D0F008BAF80 /* MVVMViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMViewController.swift; sourceTree = "<group>"; };
+		24D6F05E2A189F6E008BAF80 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		24D6F0602A18A1FE008BAF80 /* MVVMViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MVVMViewController.xib; sourceTree = "<group>"; };
+		24D6F0622A18A209008BAF80 /* MVPViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MVPViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +115,7 @@
 			children = (
 				24D6F0232A189C84008BAF80 /* AppDelegate.swift */,
 				24D6F0252A189C84008BAF80 /* SceneDelegate.swift */,
+				24D6F05E2A189F6E008BAF80 /* TabBarController.swift */,
 				24D6F0592A189CF1008BAF80 /* MVVM */,
 				24D6F0532A189C9C008BAF80 /* MVP */,
 				24D6F0272A189C84008BAF80 /* ViewController.swift */,
@@ -142,6 +149,7 @@
 			children = (
 				24D6F0552A189CD9008BAF80 /* Presenter.swift */,
 				24D6F0572A189CE9008BAF80 /* MVPViewController.swift */,
+				24D6F0622A18A209008BAF80 /* MVPViewController.xib */,
 			);
 			path = MVP;
 			sourceTree = "<group>";
@@ -151,6 +159,7 @@
 			children = (
 				24D6F05A2A189D01008BAF80 /* ViewModel.swift */,
 				24D6F05C2A189D0F008BAF80 /* MVVMViewController.swift */,
+				24D6F0602A18A1FE008BAF80 /* MVVMViewController.xib */,
 			);
 			path = MVVM;
 			sourceTree = "<group>";
@@ -259,6 +268,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24D6F0632A18A209008BAF80 /* MVPViewController.xib in Resources */,
+				24D6F0612A18A1FE008BAF80 /* MVVMViewController.xib in Resources */,
 				24D6F0302A189C85008BAF80 /* LaunchScreen.storyboard in Resources */,
 				24D6F02D2A189C85008BAF80 /* Assets.xcassets in Resources */,
 				24D6F02B2A189C84008BAF80 /* Main.storyboard in Resources */,
@@ -287,6 +298,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				24D6F0282A189C84008BAF80 /* ViewController.swift in Sources */,
+				24D6F05F2A189F6E008BAF80 /* TabBarController.swift in Sources */,
 				24D6F0582A189CE9008BAF80 /* MVPViewController.swift in Sources */,
 				24D6F05D2A189D0F008BAF80 /* MVVMViewController.swift in Sources */,
 				24D6F0242A189C84008BAF80 /* AppDelegate.swift in Sources */,
@@ -477,6 +489,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -505,6 +518,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
