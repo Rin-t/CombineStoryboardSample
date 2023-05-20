@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MVVMViewController" customModule="Combine_StoryboardSample" customModuleProvider="target">
             <connections>
+                <outlet property="resultLabel" destination="4Ok-Uv-aeH" id="mCM-Ik-Y61"/>
                 <outlet property="view" destination="iN0-l3-epB" id="Wxt-3b-2zq"/>
             </connections>
         </placeholder>
@@ -55,6 +56,9 @@
                     </constraints>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="plain" title="押してね"/>
+                    <connections>
+                        <action selector="tappedButton:" destination="-1" eventType="touchUpInside" id="vcc-ku-5pT"/>
+                    </connections>
                 </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
