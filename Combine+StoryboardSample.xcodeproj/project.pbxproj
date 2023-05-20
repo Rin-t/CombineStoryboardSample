@@ -16,6 +16,10 @@
 		24D6F03B2A189C85008BAF80 /* Combine_StoryboardSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D6F03A2A189C85008BAF80 /* Combine_StoryboardSampleTests.swift */; };
 		24D6F0452A189C85008BAF80 /* Combine_StoryboardSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D6F0442A189C85008BAF80 /* Combine_StoryboardSampleUITests.swift */; };
 		24D6F0472A189C85008BAF80 /* Combine_StoryboardSampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D6F0462A189C85008BAF80 /* Combine_StoryboardSampleUITestsLaunchTests.swift */; };
+		24D6F0562A189CD9008BAF80 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D6F0552A189CD9008BAF80 /* Presenter.swift */; };
+		24D6F0582A189CE9008BAF80 /* MVPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D6F0572A189CE9008BAF80 /* MVPViewController.swift */; };
+		24D6F05B2A189D01008BAF80 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D6F05A2A189D01008BAF80 /* ViewModel.swift */; };
+		24D6F05D2A189D0F008BAF80 /* MVVMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D6F05C2A189D0F008BAF80 /* MVVMViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		24D6F0402A189C85008BAF80 /* Combine+StoryboardSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Combine+StoryboardSampleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		24D6F0442A189C85008BAF80 /* Combine_StoryboardSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Combine_StoryboardSampleUITests.swift; sourceTree = "<group>"; };
 		24D6F0462A189C85008BAF80 /* Combine_StoryboardSampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Combine_StoryboardSampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		24D6F0552A189CD9008BAF80 /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		24D6F0572A189CE9008BAF80 /* MVPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPViewController.swift; sourceTree = "<group>"; };
+		24D6F05A2A189D01008BAF80 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		24D6F05C2A189D0F008BAF80 /* MVVMViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +109,8 @@
 			children = (
 				24D6F0232A189C84008BAF80 /* AppDelegate.swift */,
 				24D6F0252A189C84008BAF80 /* SceneDelegate.swift */,
+				24D6F0592A189CF1008BAF80 /* MVVM */,
+				24D6F0532A189C9C008BAF80 /* MVP */,
 				24D6F0272A189C84008BAF80 /* ViewController.swift */,
 				24D6F0292A189C84008BAF80 /* Main.storyboard */,
 				24D6F02C2A189C85008BAF80 /* Assets.xcassets */,
@@ -125,6 +135,24 @@
 				24D6F0462A189C85008BAF80 /* Combine_StoryboardSampleUITestsLaunchTests.swift */,
 			);
 			path = "Combine+StoryboardSampleUITests";
+			sourceTree = "<group>";
+		};
+		24D6F0532A189C9C008BAF80 /* MVP */ = {
+			isa = PBXGroup;
+			children = (
+				24D6F0552A189CD9008BAF80 /* Presenter.swift */,
+				24D6F0572A189CE9008BAF80 /* MVPViewController.swift */,
+			);
+			path = MVP;
+			sourceTree = "<group>";
+		};
+		24D6F0592A189CF1008BAF80 /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				24D6F05A2A189D01008BAF80 /* ViewModel.swift */,
+				24D6F05C2A189D0F008BAF80 /* MVVMViewController.swift */,
+			);
+			path = MVVM;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +287,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				24D6F0282A189C84008BAF80 /* ViewController.swift in Sources */,
+				24D6F0582A189CE9008BAF80 /* MVPViewController.swift in Sources */,
+				24D6F05D2A189D0F008BAF80 /* MVVMViewController.swift in Sources */,
 				24D6F0242A189C84008BAF80 /* AppDelegate.swift in Sources */,
+				24D6F0562A189CD9008BAF80 /* Presenter.swift in Sources */,
+				24D6F05B2A189D01008BAF80 /* ViewModel.swift in Sources */,
 				24D6F0262A189C84008BAF80 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
