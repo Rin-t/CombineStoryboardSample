@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MVPViewController" customModule="Combine_StoryboardSample" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="iN0-l3-epB" id="4vX-Fx-InV"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nuu-2R-qSj">
+                    <rect key="frame" x="139.66666666666666" y="368" width="96" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="34.329999999999998" id="Pu9-cb-0us"/>
+                        <constraint firstAttribute="width" constant="96" id="uG1-4V-swH"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="押してね"/>
+                </button>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="Hok-QE-Zeq">
+                    <rect key="frame" x="57.666666666666657" y="307.33333333333331" width="260" height="52.666666666666686"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="タップでランダムな数字を返すよ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kzb-FL-mNO">
+                            <rect key="frame" x="0.0" y="0.0" width="260" height="20.333333333333332"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="↓" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ApA-CO-zPb">
+                            <rect key="frame" x="0.0" y="32.333333333333371" width="260" height="20.333333333333329"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="数字" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8gr-iX-bf3">
+                    <rect key="frame" x="164.33333333333334" y="438" width="46.666666666666657" height="27.666666666666686"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MVPで作ってるよ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kXg-2P-jvX">
+                    <rect key="frame" x="73.333333333333329" y="115.00000000000001" width="228.66666666666669" height="33.666666666666671"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="8gr-iX-bf3" firstAttribute="top" secondItem="nuu-2R-qSj" secondAttribute="bottom" constant="36" id="Ahx-hO-JY6"/>
+                <constraint firstItem="Hok-QE-Zeq" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Dnh-nG-TS0"/>
+                <constraint firstItem="Hok-QE-Zeq" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="IvX-lE-sBA"/>
+                <constraint firstItem="kXg-2P-jvX" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="56" id="PPC-1r-ROZ"/>
+                <constraint firstItem="nuu-2R-qSj" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="T2T-E1-b8T"/>
+                <constraint firstItem="8gr-iX-bf3" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="TiF-fE-hBh"/>
+                <constraint firstItem="nuu-2R-qSj" firstAttribute="top" secondItem="Hok-QE-Zeq" secondAttribute="bottom" constant="8" id="dOd-6f-bc1"/>
+                <constraint firstItem="kXg-2P-jvX" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="ja4-EP-WVV"/>
+            </constraints>
+            <point key="canvasLocation" x="64.885496183206101" y="20.422535211267608"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
