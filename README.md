@@ -1,0 +1,4 @@
+# CombineStoryboardSample
+社内勉強会向けに作ったサンプル。
+まずは、リアクティブプログラミングの触りになればと思い作成しました。
+本当はSwiftUI+Combineの方が望ましかったように思いますが、社内でSwiftUIを取り入れていないので、UIKit+Combineで書きました。
